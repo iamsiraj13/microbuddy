@@ -2,7 +2,7 @@ import React from "react";
 import processimg from "../assets/img/process.png";
 const Process = () => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto py-[90px]">
       <h2 className="text-center uppercase font-bold text-4xl text-main mb-[5rem]">
         out working process
       </h2>

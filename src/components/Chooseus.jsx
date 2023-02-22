@@ -16,7 +16,7 @@ import { Autoplay } from "swiper";
 
 export default function App() {
   return (
-    <section className="py-[80px]">
+    <section className="py-[80px] max-w-7xl mx-auto">
       <div className="mt-8">
         <h2 className="capitalize text-4xl font-bold text-center text-main">
           Why you choose us

@@ -3,7 +3,7 @@ import { BiSearchAlt2 } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <div className="h-[100px] bg-white flex  flex-row    items-center">
+    <div className="h-[100px] bg-white flex  flex-row max-w-7xl mx-auto    items-center">
       <div className="left w-[100px]">
         <h2 className="text-2xl font-bold">LOGO</h2>
       </div>
