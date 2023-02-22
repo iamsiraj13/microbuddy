@@ -61,7 +61,7 @@ export default function Pakage() {
                 <li className="text-center text-white text-lg font-semibold  border-b border-white py-4">
                   Lorem
                 </li>
-                <li className="text-center text-white text-lg font-semibold   border-b border-white py-4"></li>
+                <li className="text-center text-white text-lg font-semibold   border-b border-white py-4">  </li>
               </ul>
             </div>
             <div className="realtive">

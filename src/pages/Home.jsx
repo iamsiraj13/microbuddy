@@ -13,6 +13,7 @@ import Services from "../components/Services";
 import Contact from "../components/Contact";
 import Blog from "../components/Blog";
 import Subscribe from "../components/Subscribe";
+import Review from "../components/Review";
 
 const Home = () => {
   return (
@@ -42,6 +43,8 @@ const Home = () => {
 
         {/* pakages section */}
         <Pakage />
+        {/* client review */}
+        <Review />
         {/* product */}
         <Template />
         {/* blog section */}
