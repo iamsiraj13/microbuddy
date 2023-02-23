@@ -2,11 +2,11 @@ import React from "react";
 
 const Work = () => {
   return (
-    <div className="bg-[#EDEFFC] text-center pt-[160px] pb-20 -mt-20 max-w-7xl mx-auto">
+    <div className="bg-[#EDEFFC] text-center pt-[160px] pb-20 -mt-20  ">
       <h2 className="text-4xl font-semibold mb-4 text-main">
         Make Your Own Website.
       </h2>
-      <p className="text-main font-semibold w-3/5 mx-auto">
+      <p className="text-main font-semibold max-w-2xl mx-auto">
         Whether you're growing business,Selling online or establishing an online
         presence-discover the easiest way to get online with the SiteDocker.com
       </p>

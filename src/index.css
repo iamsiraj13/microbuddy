@@ -6,18 +6,15 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
+
 }
 
 .service {
-  height: 270px;
+  height: 303px;
   margin-top: 10px;
-  width: 290px;
-  background-image: url(../src/assets/img/service-1.png);
-  /* clip-path: polygon(0 0, 100% 40%, 100% 100%, 0% 100%); */
-  /* background-color: blue; */
-  /* border-top-left-radius: 10pxs;
-  border-radius: 10px; */
+  background-image: url(../src/assets/img/book.png);
+  background-repeat: no-repeat;
+
 }
 
 /*service area*/
@@ -29,6 +26,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  margin-top: -110px;
 }
 
 .contact {
@@ -157,4 +155,98 @@ body {
   z-index: 999;
   left: 38%;
   bottom: -8%;
+}
+
+.rebg {
+  margin-top: -250px;
+  position: absolute;
+
+}
+
+.banner-text {
+  text-shadow: 9px 11px 6px #dcdcdc;
+  line-height: 0.8;
+}
+
+.question {
+  background-image: url(../src/assets/img/ques.png);
+  height: 400px;
+  margin-left: -20px;
+  margin-top: 30px;
+
+}
+
+.process-wrapper {
+  width: 100%;
+  height: 1330px;
+  background-image: url(../src/assets/img/line.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* wprl processing */
+.wpimg1 {
+  width: 200px;
+  left: -7px;
+  top: -218px;
+  position: absolute;
+}
+
+.wpimg-inner {
+  top: -196px;
+  position: relative;
+  left: 47px;
+}
+
+.wpimg2 {
+  top: -276px;
+  position: relative;
+  left: -19px;
+}
+
+.wpimg-inner2 {
+  top: -251px;
+  position: relative;
+  left: 99px;
+}
+
+.wpimg3 {
+  position: absolute;
+  right: 156px;
+  top: -1px;
+  width: 200px;
+}
+
+.wpimg-inner {
+  top: -196px;
+  position: relative;
+  left: 47px;
+}
+
+.wpimg4 {
+  top: -226px;
+  position: relative;
+  left: -19px;
+  width: 200px;
+}
+
+.wpimg5 {
+  top: -333px;
+  position: relative;
+  left: 23px;
+  width: 200px;
+}
+
+.wpimg6 {
+  top: -278px;
+  position: relative;
+  left: -19px;
+  width: 200px;
+}
+
+.wpimg7 {
+  top: -443px;
+  position: relative;
+  left: -19px;
+  width: 200px;
 }

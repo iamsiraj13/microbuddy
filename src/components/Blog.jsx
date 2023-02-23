@@ -5,6 +5,11 @@ import blog3 from "../assets/img/blog3.png";
 const Blog = () => {
   return (
     <div className="blog pl-[100px] mx-auto">
+      <div className="section-title">
+        <h2 className="text-center text-[#645AD8] text-5xl font-semibold mb-6">
+          Latest Blog
+        </h2>
+      </div>
       <div className="grid grid-cols-3 gap-[110px]">
         <div>
           <div className="w-full">

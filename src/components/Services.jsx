@@ -1,25 +1,50 @@
 import React from "react";
+import { BsCodeSlash } from "react-icons/bs";
 const Services = () => {
+  const service = [
+    {
+      title: "Web Development",
+      icon: <BsCodeSlash />,
+    },
+    {
+      title: "Web Design",
+      icon: <BsCodeSlash />,
+    },
+    {
+      title: "Ecommerce",
+      icon: <BsCodeSlash />,
+    },
+    {
+      title: "Content Writing",
+      icon: <BsCodeSlash />,
+    },
+    {
+      title: "Content Writing",
+      icon: <BsCodeSlash />,
+    },
+    {
+      title: "Content Writing",
+      icon: <BsCodeSlash />,
+    },
+  ];
+
   return (
     <>
       {/* our services  */}
-      <div className=" bg-second py-[80px] mt-[30px] grid grid-cols-4 max-w-7xl mx-auto">
-        <div className="service relative flex items-center justify-start ">
-          <span className="w-24 h-24 rounded-full absolute shadow right-0 top-10 bg-white"></span>
-          <h4 className="ml-8 mt-8">Web Developement</h4>
-        </div>
-        <div className="service relative flex items-center justify-start ">
-          <span className="w-24 h-24 shadow rounded-full absolute right-0 top-10 bg-white"></span>
-          <h4 className="ml-8 mt-8">Web Developement</h4>
-        </div>
-        <div className="service relative flex items-center justify-start ">
-          <span className="w-24 h-24 rounded-full absolute shadow right-0 top-10 bg-white"></span>
-          <h4 className="ml-8 mt-8">Web Developement</h4>
-        </div>
-        <div className="service relative flex items-center justify-start ">
-          <span className="w-24 h-24 rounded-full absolute shadow right-0 top-10 bg-white"></span>
-          <h4 className="ml-8 mt-8">Web Developement</h4>
-        </div>
+      <div className="section-title">
+        <h2 className="text-center text-5xl font-semibold mt-4 text-[#645AD8]">
+          Our Services
+        </h2>
+      </div>
+      <div className=" bg-second py-[80px] mt-[30px] grid grid-cols-6      ">
+        {service.map((serv) => (
+          <div className="service relative flex items-center justify-start  ">
+            <span className="w-28 h-28 rounded-full absolute shadow left-[60%] top-12 bg-white flex items-center justify-center text-4xl">
+              {serv.icon}
+            </span>
+            <h4 className="ml-8 mt-8">{serv.title}</h4>
+          </div>
+        ))}
       </div>
       <div className="service-bottom"></div>
     </>

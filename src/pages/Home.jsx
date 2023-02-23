@@ -4,8 +4,6 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Process from "../components/Process";
-import Chooseus from "../components/Chooseus";
-// import Services from "../components/Services";
 import Work from "../components/Work";
 import Pakage from "../components/Pakage";
 import Template from "../components/Template";
@@ -14,14 +12,15 @@ import Contact from "../components/Contact";
 import Blog from "../components/Blog";
 import Subscribe from "../components/Subscribe";
 import Review from "../components/Review";
+import Askquestion from "../components/Askquestion";
+import PartnerLogo from "../components/PartnerLogo";
 
 const Home = () => {
   return (
     <div className="w-full    mx-auto">
       {/* navbar */}
-      <div className=" border-b border-[#00FFFF]">
-        <Navbar />
-      </div>
+      <Navbar />
+
       <main>
         {/* hero section */}
         <Hero />
@@ -38,8 +37,6 @@ const Home = () => {
         <Contact />
         {/* working process */}
         <Process />
-        {/* why choose us section */}
-        <Chooseus />
 
         {/* pakages section */}
         <Pakage />
@@ -47,10 +44,13 @@ const Home = () => {
         <Review />
         {/* product */}
         <Template />
+        {/* ask anything */}
+        <Askquestion />
         {/* blog section */}
         <Blog />
         {/* email subscription */}
         <Subscribe />
+        <PartnerLogo />
       </main>
 
       {/* footer */}
