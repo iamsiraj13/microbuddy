@@ -39,7 +39,7 @@ const Feature = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setActiveIndex((activeIndex + 1) % sliderData.length);
-    }, 1000000);
+    }, 4000);
     return () => clearInterval(intervalId);
   }, [activeIndex, sliderData.length]);
 

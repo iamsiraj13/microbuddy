@@ -23,10 +23,10 @@ export default class AsNavFor extends Component {
   render() {
     const settings = {
       dots: false,
-      infinite: true,
+      infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 1700,
       fade: true,
       arrows: false,
