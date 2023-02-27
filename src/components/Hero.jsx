@@ -3,7 +3,7 @@ import React from "react";
 import world from "../assets/img/world.png";
 const Hero = () => {
   return (
-    <div className="flex items-center  px-[100px]">
+    <div className="flex items-center  px-[100px]" id="/">
       <div className="left w-3/5">
         <h2 className="banner-text text-[80px] text-[#707070] font-bold">
           Connect to The <br />

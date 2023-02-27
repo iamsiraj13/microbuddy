@@ -10,6 +10,28 @@ body {
 
 }
 
+
+/* header */
+
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  background-color: #ffffff !important;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+
+
+
+/*service area*/
+
 .service {
   height: 303px;
   margin-top: 10px;
@@ -18,7 +40,10 @@ body {
 
 }
 
-/*service area*/
+.section-title {
+  margin-bottom: 190px;
+}
+
 
 .feature-area {
   background-image: url(../src/assets/img/servicebg.png);
@@ -32,8 +57,9 @@ body {
 
 .menu-item.active {
   color: #000;
-  font-weight: bold; 
+  font-weight: bold;
 }
+
 .contact {
   background-image: url(../src/assets/img/contact.png);
   background-size: cover;
@@ -55,7 +81,7 @@ body {
 }
 
 .t-box {
-  z-index: 999;
+  z-index: 1;
 }
 
 .blog {
@@ -133,42 +159,48 @@ body {
   padding-top: 30px;
 }
 
-.card-head{
+.card-head {
   transform: translateY(315px);
-  display:flex;
+  display: flex;
   justify-content: center;
 }
-.card{
+
+.card {
   margin: 0 70px;
 }
+
 .card p {
   margin-top: 84px;
 }
-.card-footer{
+
+.card-footer {
   display: flex;
   justify-content: center;
   transform: translateY(-39px);
 }
- .card-footer h4{
-  transform:translate(-50%, -50%);
- }
- .card ul li{
-  border-bottom:1px solid #fff;
-  font-size:20px; 
-  padding: 10px 0;
-  text-align:center;
-  color:#fff;
- }
 
- .leftshdw{
+.card-footer h4 {
+  transform: translate(-50%, -50%);
+}
+
+.card ul li {
+  border-bottom: 1px solid #fff;
+  font-size: 20px;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.leftshdw {
   position: absolute;
-    bottom: 9px;
-    left: 31px;
- }
- .sup{
+  bottom: 9px;
+  left: 31px;
+}
+
+.sup {
   top: 72px;
-    position: absolute;
- }
+  position: absolute;
+}
 
 .p-text {
   position: absolute;
@@ -223,20 +255,23 @@ body {
 
 /* wprl processing */
 .wpimg1 {
-  width: 200px;
   left: -7px;
-  top: -218px;
+  top: -161px;
   position: absolute;
 }
 
 .wpimg-inner {
-  top: -196px;
   position: relative;
-  left: 47px;
+  display: flex;
+  flex-direction: column;
+  width: 55px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
 }
 
 .wpimg2 {
-  top: -276px;
+  top: -118px;
   position: relative;
   left: -19px;
 }
@@ -249,9 +284,8 @@ body {
 
 .wpimg3 {
   position: absolute;
-  right: 156px;
-  top: -1px;
-  width: 200px;
+  right: 155px;
+  top: 85px;
 }
 
 .wpimg-inner {
@@ -261,71 +295,77 @@ body {
 }
 
 .wpimg4 {
-  top: -226px;
+  top: -81px;
   position: relative;
   left: -19px;
-  width: 200px;
 }
 
 .wpimg5 {
-  top: -333px;
+  top: -268px;
   position: relative;
-  left: 23px;
-  width: 200px;
+  left: 88px;
 }
 
 .wpimg6 {
-  top: -278px;
+  top: -151px;
   position: relative;
   left: -19px;
-  width: 200px;
 }
 
 .wpimg7 {
-  top: -443px;
+  top: -318px;
   position: relative;
   left: -19px;
-  width: 200px;
 }
 
 /* choose area */
-.choose-area{
+.choose-area {
   background-image: url(./assets/img/background.png);
-  width:100%;
-  height:800px;
+  width: 100%;
+  height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-top: 99px;
 }
-.slideone{
+
+.slideone {
   background-image: url(./assets/img/design.png);
-  width:100%;
-  height:765px;
+  width: 100%;
+  height: 765px;
   background-size: cover;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.slidefirst{
-  height:800px;
+
+.slidefirst {
+  height: 800px;
 }
-.slidefirst h3{
-  height:100%;
-  display:flex;
+
+.slidefirst h3 {
+  height: 100%;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   text-transform: uppercase;
+  margin-top: -77px;
 }
-.sliderimg{
-  width:100%;
+
+.sliderimg {
+  width: 100%;
   height: 793px;
   /* background-image: url(./assets/img/slider.png); */
   /* background-color: yellow; */
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
   overflow: hidden;
-  background-size:cover;
-  z-index:-99
+  background-size: cover;
+  z-index: -99
 }
-.slidertwo{
-  margin-top: -30px;
+
+.slidertwo {
+  margin-top: 179px;
 }
- 
+
+.slick-slider {
+  margin-top: -190px;
+}

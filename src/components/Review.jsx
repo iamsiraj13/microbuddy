@@ -6,7 +6,7 @@ import quote from "../assets/img/quote.png";
 import quote2 from "../assets/img/quote2.png";
 const Review = () => {
   return (
-    <div className="my[100px]">
+    <div className="my[100px] mb-[100px]">
       <div className="section-title px-[250px] flex flex-col items-end">
         <h2 className="uppercase  font-semibold " style={{ fontSize: "140px" }}>
           our client

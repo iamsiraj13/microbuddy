@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import one from "../assets/img/1.png";
+import one from "../assets/img/slider/one.png";
+import two from "../assets/img/slider/two.png";
+import three from "../assets/img/slider/three.png";
+import four from "../assets/img/slider/four.png";
+import five from "../assets/img/slider/five.png";
+import six from "../assets/img/slider/six.png";
 
 const Feature = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -11,30 +16,30 @@ const Feature = () => {
     },
     {
       title: "Online Business",
-      image: one,
+      image: two,
     },
     {
       title: "For Branding",
-      image: one,
+      image: three,
     },
     {
       title: "Movie Server",
-      image: one,
+      image: four,
     },
     {
       title: "Company Profile",
-      image: one,
+      image: five,
     },
     {
       title: "Personal Portfolio",
-      image: one,
+      image: six,
     },
   ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setActiveIndex((activeIndex + 1) % sliderData.length);
-    }, 1500);
+    }, 1000000);
     return () => clearInterval(intervalId);
   }, [activeIndex, sliderData.length]);
 
@@ -51,23 +56,22 @@ const Feature = () => {
               Why you need you own website
             </h2>
           </div>
-          <div className="flex items-center flex-row justify-center space-x-8">
-            <div className="">
-              <ul className="text-right flex flex-col justify-end space-y-3 font-semibold text-white">
-                {sliderData.map((item, index) => (
-                  <li
-                    key={index}
-                    className={
-                      activeIndex === index ? "menu-item active" : "menu-item"
-                    }
-                    onClick={() => handleMenuClick(index)}
-                  >
-                    {item.title}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="w-[500px] p-8 flex flex-shrink-0">
+          <div className="flex items-center flex-row justify-center mt-[-219px]">
+            <ul className="text-right flex flex-col justify-end space-y-3 font-semibold text-white">
+              {sliderData.map((item, index) => (
+                <li
+                  key={index}
+                  className={
+                    activeIndex === index ? "menu-item active" : "menu-item"
+                  }
+                  onClick={() => handleMenuClick(index)}
+                >
+                  {item.title}
+                </li>
+              ))}
+            </ul>
+
+            <div className="w-[500px] mt-[-25px]">
               {/* <img src={one} alt="" className="ml-[288px] mt-[16px]" /> */}
               <img
                 src={sliderData[activeIndex].image}

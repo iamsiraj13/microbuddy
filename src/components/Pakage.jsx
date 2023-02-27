@@ -13,10 +13,10 @@ export default function Pakage() {
     dots: false,
     speed: 500,
     slidesToShow: 3,
-    infinite: false,
+    infinite: true,
     pauseOnHover: true,
     initialSlide: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1500,
     responsive: [
       {
@@ -48,7 +48,7 @@ export default function Pakage() {
 
   const pakages = [1, 2, 3, 4, 5, 6];
   return (
-    <section className="px-[100px] mb-[100px] pt-[100px]">
+    <section className="px-[100px] mb-[100px] pt-[100px]" id="pricing">
       <div className="">
         <h2 className="text-center text-[70px] font-bold text-[#645AD8]">
           Our Pakages

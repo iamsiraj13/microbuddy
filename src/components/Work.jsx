@@ -2,7 +2,10 @@ import React from "react";
 
 const Work = () => {
   return (
-    <div className="bg-[#EDEFFC] text-center pt-[160px] pb-20 -mt-20  ">
+    <div
+      className="bg-[#EDEFFC] text-center pt-[160px] pb-20 -mt-20 "
+      id="about"
+    >
       <h2 className="text-4xl font-semibold mb-4 text-main">
         Make Your Own Website.
       </h2>

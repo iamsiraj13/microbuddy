@@ -2,7 +2,7 @@ import React from "react";
 import templateimg from "../assets/img/template.png";
 const Template = () => {
   return (
-    <div className="max-w-7xl mx-auto mt-[100px]">
+    <div className="max-w-7xl mx-auto mt-[100px]" id="ecommerce">
       <div className="grid grid-cols-3 gap-5">
         <div className="p-4">
           <h5 className="text-main font-semibold mb-[50px]">Ecommerce</h5>

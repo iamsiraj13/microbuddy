@@ -32,8 +32,10 @@ export default class AsNavFor extends Component {
       arrows: false,
     };
     return (
-      <div className="choose-area">
-        <h2>Why you choose us</h2>
+      <div className="choose-area relative">
+        <h2 className="text-[70px] absolute left-10 font-semibold">
+          Why you choose us
+        </h2>
         <div className="relative z-10">
           <div
             className=" w-[50%] absolute top-0 right-0 slidertwo"
@@ -70,7 +72,7 @@ export default class AsNavFor extends Component {
               <div className="slidefirst">
                 <h3 className="text-7xl text-[#FFC955] font-bold  ">
                   Expert{" "}
-                  <span className="block text-[#645AD8] font-semibold text-[150px]">
+                  <span className="block text-[#645AD8]  font-normal text-[150px]">
                     Team
                   </span>
                 </h3>
@@ -78,14 +80,11 @@ export default class AsNavFor extends Component {
               <div className="slidefirst">
                 <h3 className="text-7xl text-[#FFC955] font-bold  ">
                   Speacialist
-                  <span className="block text-[#645AD8] font-semibold text-[150px]">
-                    Team
-                  </span>
                 </h3>
               </div>
               <div className="slidefirst">
                 <h3 className="text-7xl text-[#FFC955] font-bold  ">
-                  Expert{" "}
+                  Developer{" "}
                   <span className="block text-[#645AD8] font-semibold text-[150px]">
                     Team
                   </span>

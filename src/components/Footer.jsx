@@ -8,7 +8,7 @@ import {
 import { FiSend } from "react-icons/fi";
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="max-w-7xl  mx-auto f-content">
         <div className="flex flex-row space-x-8  ">
           {/* logo and description  */}
