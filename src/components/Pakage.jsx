@@ -1,122 +1,92 @@
 import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import wow from "../assets/img/wow.png";
 import left from "../assets/img/left.png";
 import foot from "../assets/img/footimg.png";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-// import required modules
-import { Autoplay } from "swiper";
-
 export default function Pakage() {
+  const settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 3,
+    infinite: true,
+    pauseOnHover: true,
+    initialSlide: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const pakages = [1, 2, 3, 4, 5, 6];
   return (
-    <section className="py-[80px] mb-[100px] ">
+    <section className="px-[100px] mb-[100px] ">
       <div className="mb-[50px]">
         <h2 className="text-center text-4xl font-bold text-main">
           Our Pakages
         </h2>
       </div>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        freeMode={true}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div className="bg-[#B9DD26]  pakage relative  ">
-            <div className="pakage-head ">
-              <div className="relative">
-                <img src={wow} alt="" className="img1" />
 
-                <img src={left} alt="" className="absolute -left-3 img2 " />
-                <h4 className="text-center p-text text-white font-semibold text-4xl">
+      <div>
+        <Slider {...settings}>
+          {pakages.map((pakage) => (
+            <div className="gap-4 flex flex-col items-center">
+              <div className="card-head w-full h-[290px] relative  ">
+                <h2 className="absolute top-[50%] left-[50%] translate-x-[-50%] -translate-y-1/2 text-white font-semibold text-4xl text-center">
                   Silver
+                </h2>
+                <img src={left} className="leftshdw" alt="" />
+                <img src={wow} alt="wow" />
+              </div>
+              <div className="card  pt-[209px] pb-[50px] bg-[#F26522]">
+                <p className="text-[130px] text-center text-white relative">
+                  10
+                  <sup className="text-[60px] sup ">,99</sup>
+                </p>
+                <ul>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum</li>
+                </ul>
+              </div>
+              <div className="card-footer  relative ">
+                <h4 className="uppercase  absolute left-[50%] top-[50%] text-[50px] text-bold text-white">
+                  start
                 </h4>
+                <img src={foot} alt="" />
               </div>
             </div>
-            <div className="mb-[54px]">
-              <h3 className="text-white text-center text-8xl mt-8 mb-[50px] font-semibold">
-                15'<sup>99</sup>
-              </h3>
-              <ul>
-                <li className="text-center text-white text-lg font-semibold  border-b border-white py-4">
-                  Lorem Ipsum
-                </li>
-                <li className="text-center text-white text-lg font-semibold  border-b border-white py-4">
-                  Lorem
-                </li>
-                <li className="text-center text-white text-lg font-semibold  border-b border-white py-4">
-                  Lorem
-                </li>
-                <li className="text-center text-white text-lg font-semibold  border-b border-white py-4">
-                  Lorem
-                </li>
-                <li className="text-center text-white text-lg font-semibold   border-b border-white py-4">
-                  {" "}
-                </li>
-              </ul>
-            </div>
-            <div className="realtive">
-              <h4 className="text-center f-text text-white font-semibold text-3xl">
-                Start
-              </h4>
-            </div>
-            <img src={foot} alt="" className="img-foot " />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="bg-[#B9DD26]  pakage relative  ">
-            <div className="pakage-head ">
-              <div className="relative">
-                <img src={wow} alt="" className="img1" />
-
-                <img src={left} alt="" className="absolute -left-3 img2 " />
-                <h4 className="text-center p-text text-white font-semibold text-4xl">
-                  Silver
-                </h4>
-              </div>
-            </div>
-            <div className="mb-[54px]">
-              <h3 className="text-white text-center text-8xl mt-8 mb-[50px] font-semibold">
-                15'<sup>99</sup>
-              </h3>
-              <ul>
-                <li className="text-center text-white text-lg font-semibold  border-b border-white py-4">
-                  Lorem Ipsum
-                </li>
-                <li className="text-center text-white text-lg font-semibold  border-b border-white py-4">
-                  Lorem
-                </li>
-                <li className="text-center text-white text-lg font-semibold  border-b border-white py-4">
-                  Lorem
-                </li>
-                <li className="text-center text-white text-lg font-semibold  border-b border-white py-4">
-                  Lorem
-                </li>
-                <li className="text-center text-white text-lg font-semibold   border-b border-white py-4">
-                  {" "}
-                </li>
-              </ul>
-            </div>
-            <div className="realtive">
-              <h4 className="text-center f-text text-white font-semibold text-3xl">
-                Start
-              </h4>
-            </div>
-            <img src={foot} alt="" className="img-foot " />
-          </div>
-        </SwiperSlide>
-      </Swiper>
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 }

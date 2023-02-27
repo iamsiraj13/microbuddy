@@ -36,7 +36,7 @@ const Services = () => {
           Our Services
         </h2>
       </div>
-      <div className=" bg-second py-[80px] mt-[30px] grid grid-cols-6      ">
+      <div className=" bg-second py-[80px] mt-[30px] grid grid-cols-4 grid-rows-2 md:gird-cols-5 xl:grid-cols-6 sm:grid-cols-3     ">
         {service.map((serv) => (
           <div className="service relative flex items-center justify-start  ">
             <span className="w-28 h-28 rounded-full absolute shadow left-[60%] top-12 bg-white flex items-center justify-center text-4xl">

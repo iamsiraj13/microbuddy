@@ -14,6 +14,7 @@ import Subscribe from "../components/Subscribe";
 import Review from "../components/Review";
 import Askquestion from "../components/Askquestion";
 import PartnerLogo from "../components/PartnerLogo";
+import AsNavFor from "../components/AsNav";
 
 const Home = () => {
   return (
@@ -51,6 +52,8 @@ const Home = () => {
         {/* email subscription */}
         <Subscribe />
         <PartnerLogo />
+
+        <AsNavFor />
       </main>
 
       {/* footer */}
