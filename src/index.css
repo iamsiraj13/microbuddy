@@ -30,6 +30,10 @@ body {
   margin-top: -110px;
 }
 
+.menu-item.active {
+  color: #000;
+  font-weight: bold; 
+}
 .contact {
   background-image: url(../src/assets/img/contact.png);
   background-size: cover;
@@ -313,9 +317,15 @@ body {
 }
 .sliderimg{
   width:100%;
-  height:800px;
-  background-image: url(./assets/img/slider.png);
+  height: 793px;
+  /* background-image: url(./assets/img/slider.png); */
+  /* background-color: yellow; */
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
   overflow: hidden;
   background-size:cover;
+  z-index:-99
 }
+.slidertwo{
+  margin-top: -30px;
+}
+ 

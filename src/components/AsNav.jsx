@@ -23,10 +23,10 @@ export default class AsNavFor extends Component {
   render() {
     const settings = {
       dots: false,
-      infinite: false,
+      infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 1700,
       fade: true,
       arrows: false,
@@ -34,7 +34,32 @@ export default class AsNavFor extends Component {
     return (
       <div className="choose-area">
         <h2>Why you choose us</h2>
-        <div className="relative">
+        <div className="relative z-10">
+          <div
+            className=" w-[50%] absolute top-0 right-0 slidertwo"
+            style={{ zIndex: -10 }}
+          >
+            <Slider
+              asNavFor={this.state.nav1}
+              ref={(slider) => (this.slider2 = slider)}
+              slidesToShow={3}
+              swipeToSlide={true}
+              focusOnSelect={true}
+              className="gap-8"
+              {...settings}
+            >
+              <div className="sliderimg">
+                <img src={sliderimg} alt="" />
+              </div>
+              <div className="sliderimg">
+                <img src={sliderimg} alt="" />
+              </div>
+              <div className="sliderimg">
+                <img src={sliderimg} alt="" />
+              </div>
+            </Slider>
+          </div>
+
           <div className="slideone px-[100px] z-20 ">
             <Slider
               asNavFor={this.state.nav2}
@@ -50,25 +75,22 @@ export default class AsNavFor extends Component {
                   </span>
                 </h3>
               </div>
-              {/* <div className=" ">
-                <h3>Specialist</h3>
+              <div className="slidefirst">
+                <h3 className="text-7xl text-[#FFC955] font-bold  ">
+                  Speacialist
+                  <span className="block text-[#645AD8] font-semibold text-[150px]">
+                    Team
+                  </span>
+                </h3>
               </div>
-              <div className="  ">
-                <h3>Software Engineer</h3>
-              </div> */}
-            </Slider>
-          </div>
-          <div className=" w-[50%] absolute top-0 right-0 slidertwo">
-            <Slider
-              asNavFor={this.state.nav1}
-              ref={(slider) => (this.slider2 = slider)}
-              slidesToShow={3}
-              swipeToSlide={true}
-              focusOnSelect={true}
-              className="gap-8"
-              {...settings}
-            >
-              <div className="sliderimg"></div>
+              <div className="slidefirst">
+                <h3 className="text-7xl text-[#FFC955] font-bold  ">
+                  Expert{" "}
+                  <span className="block text-[#645AD8] font-semibold text-[150px]">
+                    Team
+                  </span>
+                </h3>
+              </div>
             </Slider>
           </div>
         </div>

@@ -39,12 +39,14 @@ const Home = () => {
         {/* working process */}
         <Process />
 
+        <AsNavFor />
+        {/* product */}
+        <Template />
         {/* pakages section */}
         <Pakage />
         {/* client review */}
         <Review />
-        {/* product */}
-        <Template />
+
         {/* ask anything */}
         <Askquestion />
         {/* blog section */}
@@ -52,8 +54,6 @@ const Home = () => {
         {/* email subscription */}
         <Subscribe />
         <PartnerLogo />
-
-        <AsNavFor />
       </main>
 
       {/* footer */}
